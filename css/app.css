@@ -29,7 +29,6 @@ body {
     background-color: white;
     width: 100%;
     max-width: 20.438rem;
-    height: 567px;  /* Use only as reference */
     border-radius: 1.25rem;
 }
 
@@ -43,12 +42,14 @@ body {
 
 .card-content {
     text-align: center;
+    padding: 0 25px;
 }
 
 .card-content-header {
     font-size: 22px;
     font-weight: 900;
     color: var(--dark-blue);
+    padding-top: 40px;
 }
 
 .card-content-paragraph {
@@ -56,13 +57,14 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 25px;
+    padding: 20px 0;
 }
 
 .card-price {
     display: flex;
     align-items: center;
     background-color: var(--very-pale-blue);
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
     padding: 15px;
     border-radius: 11px;
@@ -73,7 +75,7 @@ body {
 }
 
 .card-price-plan {
-    margin-right: 65px;
+    margin-right: 3.125rem;
 }
 
 .card-price-plan-header {
@@ -99,9 +101,55 @@ body {
     font-weight: 700;
     line-height: 17px;
     background: none;
+    transition: color 500ms;
 }
 
+.card-price-button:hover {
+    color:#766CF1;
+    cursor: pointer;
+}
 
+.card-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.card-submit-proceed {
+    background-color: var(--bright-blue);
+    color: white;
+    border-style: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 11px;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    transition: background-color 500ms;
+}
+
+.card-submit-proceed:hover {
+    background-color: #766CF1;
+    cursor: pointer;
+}
+
+.card-submit-cancel {
+    border: none;
+    background: none;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 25px 0 30px 0;
+}
+
+.card-submit-cancel:hover {
+    cursor: pointer;
+}
 
 
 
@@ -117,5 +165,17 @@ body {
         background: url(/images/pattern-background-desktop.svg) no-repeat;
         background-color: #E0E8FF;
         background-position: center top -50px;
+    }
+
+    .card {
+        max-width: 350px;
+    }
+
+    .card-image {
+        height: 11rem;
+    }
+
+    .card-price-plan:nth-child(2) {
+        margin-right: 4rem;
     }
 }
