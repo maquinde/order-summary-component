@@ -168,7 +168,8 @@ body {
     }
 
     .card {
-        max-width: 350px;
+        max-width: 450px;
+        height: 697px;
     }
 
     .card-image {
