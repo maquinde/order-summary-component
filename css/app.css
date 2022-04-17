@@ -106,6 +106,7 @@ body {
 .card-price-button:hover {
     color:#766CF1;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .card-submit {
@@ -158,6 +159,7 @@ body {
 
 
 
+
 /* MEDIA QUERIES */
 @media (min-width: 376px) {
     body {
@@ -191,12 +193,7 @@ body {
     }
     
     .card-price {
-        display: flex;
-        align-items: center;
-        background-color: var(--very-pale-blue);
-        margin: 0 auto;
-        padding: 15px;
-        border-radius: 11px;
+        padding: 25px;
     }
     
     .card-price-image {
@@ -204,79 +201,24 @@ body {
     }
     
     .card-price-plan {
-        margin-right: 3.125rem;
+        margin-right: 90px;
     }
-    
+
     .card-price-plan-header {
-        color: var(--dark-blue);
-        font-weight: 900;
-        font-size: 14px;
-        line-height: 19px;
-    
+        font-size: 15px;
+        margin-bottom: 5px;
     }
     
     .card-price-plan-paragraph {
-        color: var(--desaturated-blue);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 15px;
     }
-    
+
     .card-price-button {
-        border: none;
-        text-decoration: underline;
-        color: var(--bright-blue);
-        font-size: 13px;
-        font-weight: 700;
-        line-height: 17px;
-        background: none;
-        transition: color 500ms;
+        font-size: 15px;
     }
-    
-    .card-price-button:hover {
-        color:#766CF1;
-        cursor: pointer;
-    }
-    
-    .card-submit {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding-top: 20px;
-    }
-    
+
     .card-submit-proceed {
-        background-color: var(--bright-blue);
-        color: white;
-        border-style: none;
-        padding: 15px;
-        width: 100%;
-        border-radius: 11px;
-        font-weight: 900;
-        font-size: 15px;
-        line-height: 20px;
-        box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
-        transition: background-color 500ms;
+        margin: 14px;
     }
-    
-    .card-submit-proceed:hover {
-        background-color: #766CF1;
-        cursor: pointer;
-    }
-    
-    .card-submit-cancel {
-        border: none;
-        background: none;
-        color: var(--desaturated-blue);
-        font-weight: 900;
-        font-size: 15px;
-        line-height: 20px;
-        padding: 25px 0 30px 0;
-    }
-    
-    .card-submit-cancel:hover {
-        cursor: pointer;
-    }
+
 }
