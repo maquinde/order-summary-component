@@ -163,7 +163,7 @@ body {
 /* MEDIA QUERIES */
 @media (min-width: 376px) {
     body {
-        background: url(/images/pattern-background-desktop.svg) no-repeat;
+        background: url(images/pattern-background-desktop.svg) no-repeat;
         background-color: #E0E8FF;
         background-position: center top -50px;
     }
