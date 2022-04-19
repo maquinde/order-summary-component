@@ -223,3 +223,33 @@ body {
     }
 
 }
+
+
+/* FEEDBACK
+
+
+*** Create a branch before implementing ***
+
+content is overflowing for me on mobile. I think this is because of the margins within the card-plan grey box making everything too wide. This margin is also what's causing the annual plan writing to stack:
+.card-price-plan {
+    margin-right: 3.125rem; // change to margin auto 
+    // add text align left here 
+}
+
+the card needs a little margin on it or padding on a wrapping element so it can't touch screen edges
+
+change the height 100vh to min-height. This is what's causing the image to be cut off completely for me on mobile landscape at the moment
+
+on the subject of height, the card should never have one. Let it be as tall as it needs to be based off its content. If I change text size or zoom the card needs to be able to grow. Remove that height, and then it will.
+
+font size must never be in px. Use rem
+
+line height should never be in px, it should be unitless like 1.4 or %
+
+your desktop media query is starting to early. This means most mobile users will be served desktop images and styles. Make it at least 700px (or that in rem)
+
+curious why you're using buttons for all 3 actions. Might be fine, might not. What would you expect to happen on click of each of these 1) change 2) proceed 3) cancel. If you say what you'd think would happen that will define what element to use
+
+don't forget to always include focus-visible styles to interactive elements. It needs to be clear and obvious (no designs provided for this) so keyboard users know exactly where they are on the page.
+
+ */
