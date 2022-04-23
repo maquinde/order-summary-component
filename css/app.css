@@ -17,7 +17,10 @@
 body {
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
-    background: url(../images/pattern-background-mobile.svg) no-repeat;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top -300px;
     background-color: #E0E8FF;
     display: flex;
     justify-content: center;
@@ -80,9 +83,8 @@ body {
 }
 
 .card-price-plan {
-    /* margin-right: 3.125rem; */
     margin: auto;
-    /* text-align: right; */
+    text-align: right;
 }
 
 .card-price-plan-header {
@@ -185,7 +187,6 @@ body {
 
     .card {
         max-width: 450px;
-        height: 697px;
     }
 
     .card-image {
@@ -211,14 +212,10 @@ body {
         padding: 25px;
     }
     
-    .card-price-image {
-        /* margin-right: 20px; */
-    }
-    
-    /* .card-price-plan {
+    .card-price-plan {
         margin-right: 90px;
         width: 90px;
-    } */
+    }
 
     .card-price-plan-header {
         font-size: 15px;
