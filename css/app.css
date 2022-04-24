@@ -25,7 +25,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+.wrapper {
+    padding: 10px;
 }
 
 .card {
@@ -58,16 +62,10 @@ body {
 .card-content-paragraph {
     color: var(--desaturated-blue);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938rem;
     line-height: 25px;
     padding: 20px 0;
 }
-
-
-
-
-
-/* FIX THIS */
 
 .card-price {
     display: flex;
@@ -79,19 +77,19 @@ body {
 }
 
 .card-price-image {
-    /* margin-right: 20px; */
+    padding-right: 20px;
 }
 
 .card-price-plan {
-    margin: auto;
+    margin-right: auto;
     text-align: right;
 }
 
 .card-price-plan-header {
     color: var(--dark-blue);
     font-weight: 900;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 0.875rem;
+    line-height: 1.4;
     text-align: left;
 }
 
@@ -99,17 +97,17 @@ body {
     color: var(--desaturated-blue);
     font-weight: 500;
     font-size: 14px;
-    line-height: 19px;
-    text-align: right;
+    line-height: 1.4;
+    text-align: left;
 }
 
 .card-price-button {
     border: none;
     text-decoration: underline;
     color: var(--bright-blue);
-    font-size: 13px;
+    font-size: 0.813rem;
     font-weight: 700;
-    line-height: 17px;
+    line-height: 1.4;
     background: none;
     transition: color 500ms;
 }
@@ -119,12 +117,6 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-
-/* END FIX THIS */
-
-
-
-
 
 .card-submit {
     display: flex;
@@ -143,8 +135,8 @@ body {
     width: 100%;
     border-radius: 11px;
     font-weight: 900;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.938rem;
+    line-height: 1.4;
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     transition: background-color 500ms;
 }
@@ -159,8 +151,8 @@ body {
     background: none;
     color: var(--desaturated-blue);
     font-weight: 900;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 0.938rem;
+    line-height: 1.4;
     padding: 25px 0 30px 0;
 }
 
@@ -199,15 +191,15 @@ body {
     }
     
     .card-content-header {
-        font-size: 27px;
+        font-size: 1.688rem;
         padding-top: 45px;
     }
     
     .card-content-paragraph {
-        font-size: 16px;
+        font-size: 1rem;
         padding: 20px 0;
     }
-    
+
     .card-price {
         padding: 25px;
     }
@@ -218,16 +210,16 @@ body {
     }
 
     .card-price-plan-header {
-        font-size: 15px;
+        font-size: 0.938rem;
         margin-bottom: 5px;
     }
     
     .card-price-plan-paragraph {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
 
     .card-price-button {
-        font-size: 15px;
+        font-size: 0.938rem;
     }
 
     .card-submit-proceed {
@@ -241,12 +233,6 @@ body {
 
 
 *** Create a branch before implementing ***
-
-content is overflowing for me on mobile. I think this is because of the margins within the card-plan grey box making everything too wide. This margin is also what's causing the annual plan writing to stack:
-.card-price-plan {
-    margin-right: 3.125rem; // change to margin auto 
-    // add text align left here 
-}
 
 the card needs a little margin on it or padding on a wrapping element so it can't touch screen edges
 
