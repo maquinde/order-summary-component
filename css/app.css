@@ -205,8 +205,8 @@ body {
     }
     
     .card-price-plan {
-        margin-right: 90px;
-        width: 90px;
+        margin-right: auto;
+        /* width: 90px; */
     }
 
     .card-price-plan-header {
